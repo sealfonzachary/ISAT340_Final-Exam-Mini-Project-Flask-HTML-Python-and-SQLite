@@ -17,28 +17,28 @@
 	<tr>
 
 		<td>Member ID:</td> 
-		<td><input type="text" name="memberID" value = "1"></td> 
+		<td><input type="text" name="memberID" value = "{{memberID}}" readonly /></td> 
 	</tr>
 	<tr>
 
 		<td>First name:</td> 
-		<td><input type="text" name="firstname" value = "Zac"></td> 
+		<td><input type="text" name="firstname" value = "{{firstname}}"></td> 
 	</tr>
 	<tr>
 		<td>Last name:</td>
-		<td><input type="text" name="lastname" value = "Sealfon"></td>
+		<td><input type="text" name="lastname" value = "{{lastname}}"></td>
 	</tr>
 	<tr>
 		<td>Age:</td>
-		<td><input type="text" name="age" value = "21"></td>
+		<td><input type="text" name="age" value = "{{age}}"></td>
 	</tr>
 	<tr>
 		<td>Email:</td>
-		<td><input type="text" name="email" value = "zsealfon@gmail.com" ><i>    e.g. user@domain.com</i></td>
+		<td><input type="text" name="email" value = "{{email}}" ><i>    e.g. user@domain.com</i></td>
 	</tr>
 	<tr>
 		<td><img src="{{ url_for('static', filename='headshot.jpeg') }}" width="110" height="130"></td>
-		<td><textarea name="bio" rows="8" cols="50">I was born and raised in Mount Airy, MD....</textarea></td>
+		<td><textarea name="bio" rows="8" cols="50">{{bio}}</textarea></td>
 	</tr>		
 	
 
